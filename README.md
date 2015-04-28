@@ -1,4 +1,4 @@
-# vF3D
+# vF3D 1.1.1.0
 
 Semplice programma in .NET per la visualizzazione del fascicolo elettorale elettronico (modello 3D XML)
 
