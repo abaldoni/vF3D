@@ -28,9 +28,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>it-IT</TargetCulture>
+    <ProductName>vF3D</ProductName>
+    <PublisherName>Unione della Romagna Faentina</PublisherName>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,13 +53,32 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>document-invoice.ico</ApplicationIcon>
+    <ApplicationIcon>blue-folder.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5EFA1163A429DF8EC747CCC04B63669D086288E6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>vF3D_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper">
       <HintPath>..\packages\CsvHelper.2.13.0.0\lib\net40-client\CsvHelper.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Fonet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52effa152c4a9dc6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fonet.1.0\lib\net20\Fonet.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -65,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Comune.cs" />
     <Compile Include="vF3DForm.cs">
       <SubType>Form</SubType>
@@ -74,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vF3DForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>vF3DForm.cs</DependentUpon>
@@ -99,6 +131,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="vF3D_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -113,8 +146,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="document-invoice.ico" />
-    <None Include="Resources\F3D.xslt" />
+    <Content Include="blue-folder.ico" />
+    <Content Include="Resources\F3D-1.0.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\F3D_FO.xslt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

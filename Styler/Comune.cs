@@ -17,7 +17,7 @@ namespace vF3D
     {
         public ComuneMapping()
         {
-            Map(m => m.CodiceIstat).Name("Codice Istat del Comune " + (char)10 + "(formato numerico)");
+            Map(m => m.CodiceIstat).Name("Codice Istat del Comune " + (char)10 + "(formato alfanumerico)");
             Map(m => m.Denominazione).Name("Solo denominazione in italiano");
         }
     }

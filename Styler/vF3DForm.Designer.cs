@@ -34,12 +34,14 @@ namespace vF3D
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.openDocument = new System.Windows.Forms.ToolStripButton();
             this.printDocument = new System.Windows.Forms.ToolStripButton();
+            this.convertToPDF = new System.Windows.Forms.ToolStripButton();
             this.closeWindow = new System.Windows.Forms.ToolStripButton();
+            this.infoButton = new System.Windows.Forms.ToolStripButton();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +65,9 @@ namespace vF3D
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openDocument,
             this.printDocument,
-            this.closeWindow});
+            this.convertToPDF,
+            this.closeWindow,
+            this.infoButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(980, 25);
@@ -91,6 +95,16 @@ namespace vF3D
             this.printDocument.Text = "Stampa";
             this.printDocument.Click += new System.EventHandler(this.printDocument_Click);
             // 
+            // convertToPDF
+            // 
+            this.convertToPDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.convertToPDF.Image = ((System.Drawing.Image)(resources.GetObject("convertToPDF.Image")));
+            this.convertToPDF.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.convertToPDF.Name = "convertToPDF";
+            this.convertToPDF.Size = new System.Drawing.Size(23, 22);
+            this.convertToPDF.Text = "Genera PDF";
+            this.convertToPDF.Click += new System.EventHandler(this.convertToPDF_Click);
+            // 
             // closeWindow
             // 
             this.closeWindow.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -100,6 +114,17 @@ namespace vF3D
             this.closeWindow.Size = new System.Drawing.Size(23, 22);
             this.closeWindow.Text = "Esci";
             this.closeWindow.Click += new System.EventHandler(this.closeWindow_Click);
+            // 
+            // infoButton
+            // 
+            this.infoButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.infoButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.infoButton.Image = ((System.Drawing.Image)(resources.GetObject("infoButton.Image")));
+            this.infoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.infoButton.Name = "infoButton";
+            this.infoButton.Size = new System.Drawing.Size(23, 22);
+            this.infoButton.Text = "toolStripButton1";
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
             // webBrowser1
             // 
@@ -127,21 +152,21 @@ namespace vF3D
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(816, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(847, 17);
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.Text = "URF - Servizio Informatica - AB 2015";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(0, 17);
             // 
             // vF3DForm
             // 
@@ -178,6 +203,8 @@ namespace vF3D
         private System.Windows.Forms.ToolStripButton closeWindow;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripButton infoButton;
+        private System.Windows.Forms.ToolStripButton convertToPDF;
     }
 }
 

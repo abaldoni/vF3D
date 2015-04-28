@@ -61,25 +61,64 @@ namespace vF3D.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
-        ///&lt;xsl:stylesheet
+        ///   Looks up a localized string similar to Contiene Fonet, http://fonet.codeplex.com/
+        ///Contiene CsvHelper, http://joshclose.github.io/CsvHelper/
+        ///Usa gridforms, http://kumailht.com/gridforms/
+        ///Usa jQuery, http://jquery.com/
+        ///Some icons by Yusuke Kamiyamane. Licensed under a Creative Commons Attribution 3.0 License..
+        /// </summary>
+        internal static string Attributions {
+            get {
+                return ResourceManager.GetString("Attributions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;xsl:stylesheet
         ///	version=&quot;1.1&quot;
-        ///	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
-        ///	xmlns:a=&quot;http://www.fatturapa.gov.it/sdi/fatturapa/v1.1&quot;&gt;
+        ///	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:vf3d=&quot;urn:vf3d&quot;&gt;
         ///  &lt;xsl:output method=&quot;html&quot; /&gt;
         ///
-        ///  &lt;xsl:template name=&quot;FormatDate&quot;&gt;
-        ///    &lt;xsl:param name=&quot;DateTime&quot; /&gt;
+        ///  &lt;xsl:template match=&quot;/&quot;&gt;
+        ///    &lt;xsl:apply-templates/&gt;
+        ///  &lt;/xsl:template&gt;
         ///
-        ///    &lt;xsl:variable name=&quot;year&quot; select=&quot;substring($DateTime,1,4)&quot; /&gt;
-        ///    &lt;xsl:variable name=&quot;month&quot; select=&quot;substring($DateTime,6,2)&quot; /&gt;
-        ///    &lt;xsl:variable name=&quot;day&quot; select=&quot;substring($DateTime,9,2)&quot; /&gt;
-        ///
-        ///    &lt;xsl:value-of select=&quot;&apos; (&apos;&quot;  [rest of string was truncated]&quot;;.
+        ///  &lt;xsl:template match=&quot;modello_3d-xml&quot;&gt;
+        ///    &lt;html&gt;
+        ///      &lt;head&gt;
+        ///        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+        ///        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://kumailht.com/gridforms/gridforms/gridforms.css&quot;/&gt;
+        ///        &lt;script type=&quot;text/javascript&quot; src=&quot;https:/ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string F3D_1_0 {
             get {
                 return ResourceManager.GetString("F3D_1_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;xsl:stylesheet version=&quot;2.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:vf3d=&quot;urn:vf3d&quot;&gt;
+        ///  &lt;xsl:template match=&quot;/&quot;&gt;
+        ///    &lt;fo:root xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot;&gt;
+        ///      &lt;fo:layout-master-set&gt;
+        ///        &lt;fo:simple-page-master master-name=&quot;A4&quot;
+        ///                      page-height=&quot;29.7cm&quot;
+        ///                      page-width=&quot;21cm&quot;
+        ///                      margin-top=&quot;1cm [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string F3D_FO {
+            get {
+                return ResourceManager.GetString("F3D_FO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.istat.it/storage/codici-unita-amministrative/elenco-comuni-italiani.csv.
+        /// </summary>
+        internal static string ISTATPermalink {
+            get {
+                return ResourceManager.GetString("ISTATPermalink", resourceCulture);
             }
         }
     }

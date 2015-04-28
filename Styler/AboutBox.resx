@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,21 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Attributions" xml:space="preserve">
-    <value>Contiene Fonet, http://fonet.codeplex.com/
-Contiene CsvHelper, http://joshclose.github.io/CsvHelper/
-Usa gridforms, http://kumailht.com/gridforms/
-Usa jQuery, http://jquery.com/
-Some icons by Yusuke Kamiyamane. Licensed under a Creative Commons Attribution 3.0 License.</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="F3D_1_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\f3d-1.0.xslt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="F3D_FO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\f3d_fo.xslt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="ISTATPermalink" xml:space="preserve">
-    <value>http://www.istat.it/storage/codici-unita-amministrative/elenco-comuni-italiani.csv</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="logoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        GUzfGDHwAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>
