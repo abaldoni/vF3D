@@ -81,8 +81,8 @@ namespace vF3D
             this.openDocument.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openDocument.Name = "openDocument";
             this.openDocument.Size = new System.Drawing.Size(23, 22);
-            this.openDocument.Text = "Apri Fattura Elettronica";
-            this.openDocument.ToolTipText = "Apri fattura elettronica";
+            this.openDocument.Text = "Apri 3D XML";
+            this.openDocument.ToolTipText = "Apri 3D XML";
             this.openDocument.Click += new System.EventHandler(this.openDocument_Click);
             // 
             // printDocument
@@ -123,7 +123,7 @@ namespace vF3D
             this.infoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.infoButton.Name = "infoButton";
             this.infoButton.Size = new System.Drawing.Size(23, 22);
-            this.infoButton.Text = "toolStripButton1";
+            this.infoButton.Text = "Informazioni";
             this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
             // webBrowser1
