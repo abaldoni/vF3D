@@ -56,7 +56,7 @@ namespace vF3D
             Comune c = comuni.Find(comune => comune.CodiceIstat == codiceIstat.PadLeft(6, '0'));
             if (c != null)
             {
-                return c.Denominazione;
+                return c.Denominazione + " (" + codiceIstat + ")";
             }
             else
             {

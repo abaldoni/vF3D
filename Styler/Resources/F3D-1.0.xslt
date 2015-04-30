@@ -36,7 +36,12 @@
             </div>
             <div data-row-span="2">
               <xsl:apply-templates select="data_nascita"/>
-              <xsl:apply-templates select="dati_comune_nascita"/>
+              <xsl:if test="dati_comune_nascita">
+                <xsl:apply-templates select="dati_comune_nascita"/>
+              </xsl:if>
+              <xsl:if test="dati_stato_nascita">
+                <xsl:apply-templates select="dati_stato_nascita"/>
+              </xsl:if>
             </div>
             <div data-row-span="4">
               <xsl:apply-templates select="cod_fisc"/>
@@ -249,6 +254,20 @@
         <xsl:attribute name="disabled"/>
         <xsl:attribute name="value">
           <xsl:value-of select="cod_ISTAT_comune_nascita"/>, <xsl:value-of select="descr_com_nascita"/> (<xsl:value-of select="sigla_prov_nascita"/>)
+        </xsl:attribute>
+      </xsl:element>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="dati_stato_nascita">
+    <div data-field-span="1">
+      <label>Stato di nascita</label>
+      <xsl:element name="input">
+        <xsl:attribute name="type">text</xsl:attribute>
+        <xsl:attribute name="autofocus"/>
+        <xsl:attribute name="disabled"/>
+        <xsl:attribute name="value">
+          <xsl:value-of select="cod_ISTAT_stato_nascita"/>, <xsl:value-of select="descr_com_estero_nascita"/> (<xsl:value-of select="descr_stato_nascita"/>)
         </xsl:attribute>
       </xsl:element>
     </div>
