@@ -42,6 +42,11 @@ namespace vF3D
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.convertMultiToPDF = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +70,10 @@ namespace vF3D
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openDocument,
             this.printDocument,
+            this.toolStripSeparator1,
             this.convertToPDF,
+            this.convertMultiToPDF,
+            this.toolStripSeparator2,
             this.closeWindow,
             this.infoButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -168,6 +176,31 @@ namespace vF3D
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
+            // convertMultiToPDF
+            // 
+            this.convertMultiToPDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.convertMultiToPDF.Image = ((System.Drawing.Image)(resources.GetObject("convertMultiToPDF.Image")));
+            this.convertMultiToPDF.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.convertMultiToPDF.Name = "convertMultiToPDF";
+            this.convertMultiToPDF.Size = new System.Drawing.Size(23, 22);
+            this.convertMultiToPDF.Text = "Genera PDF da cartella";
+            this.convertMultiToPDF.Click += new System.EventHandler(this.convertMultiToPDF_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // vF3DForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +238,11 @@ namespace vF3D
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripButton infoButton;
         private System.Windows.Forms.ToolStripButton convertToPDF;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton convertMultiToPDF;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

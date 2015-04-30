@@ -173,7 +173,7 @@ namespace vF3D
             aboutBox.Show();
         }
 
-        private void convertToPDF_Click(object sender, EventArgs e)
+        private void convertXmlToPDF(string xmlFilename, bool preview = true)
         {
             string filename = Path.ChangeExtension(xmlFilename, ".pdf");
 
@@ -195,7 +195,10 @@ namespace vF3D
                         driver.Render(sr, fs);
                     }
                 }
-                Process.Start(filename);
+                if (preview)
+                {
+                    Process.Start(filename);
+                }
             }
             catch (Exception ex)
             {
@@ -203,5 +206,41 @@ namespace vF3D
             }
         }
 
+        private void convertToPDF_Click(object sender, EventArgs e)
+        {
+            convertXmlToPDF(xmlFilename);
+        }
+
+        private IEnumerable<string> xmlFiles;
+        private Alert alert;
+
+        private void convertMultiToPDF_Click(object sender, EventArgs e)
+        {
+            // Show the FolderBrowserDialog.
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string folderName = folderBrowserDialog1.SelectedPath;
+                xmlFiles = Directory.EnumerateFiles(folderName, "*.xml");
+                alert = new Alert();
+                alert.Show();
+                backgroundWorker1.RunWorkerAsync();
+            }
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            foreach (string currentFile in xmlFiles)
+            {
+                convertXmlToPDF(currentFile, false);
+            }
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            alert.Dispose();
+            MessageBox.Show("Operazione completata", "Conversione in PDF", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

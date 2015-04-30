@@ -199,13 +199,32 @@
         of8gPVDtQAOUlh2Mrr0Ltskh6eR/w5C9/9U8N/0/c+bM/7Nnz/5X9dj4X81rCxwbhe79D9ID1Q4yYNHB
         8Mpb/63jT/zXCTrwXytg338Nv51gzdeuXQOzQWIwbBh2GGjAIiQD5Ocf8s6/8d8g8vR//QgI1gk5DNb8
         6NEjMBsmDsJG0Wf+g/RAtQMNkJt92Cnn3n/ThBtwbBB5Fqz57du3YDayHAiD9EC1Aw2QnnrEKe/Ff6v0
-        p3BsEn8drPndu3dgNrIcCIP0QLUDo1G0b7NF6vMfdvkf/yNjw6jzYIwubpb47AdID1Q7EPDWF0gYr75t
-        kfrmh1PJr//4sDlQjYTR6tsgPVDdIFDPw8BSVMTAWriDgbXoNH4MVANSC9JDOWBgAAC2GsGEkNSkUwAA
+        p3BsEn8drPndu3dgNrIcCIP0QLUDo1G0b7N5yvMfdvkf/yNjw6jzYIwubpbw7AdID1Q7EPDWF0gYr75t
+        nvLmh1PJr//4sBlQjYTR6tsgPVDdIFDPw8BSVMTAWriDgbXoNH4MVANSC9JDOWBgAACwycF94sJucAAA
         AABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
+  </metadata>
+  <data name="convertMultiToPDF.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGVSURBVDhPlZFPSwJRFMXfF4i+QRDk0nDRJmglmEQEUhm4
+        cpOUhESkEujozk3L1ibEGLWJ0hBEJBUN/Aa6FQSJklJnHP/e3h3ewIhvpA681bvnd+55j/B0JAh7h5HI
+        CfdEo2tszFgOQTiVJxP4GQzgs9+HZq8HjW4XXkolwLv9cNjERmelJR+EQsnXahWeKxV4KpfhsViE93od
+        kpkMoBzBoHc3EJiHLEp+KBTgOpGAG1FUj8luDzPb35Pv83mo1GoqdNvn8zH7/5Jj8Tg0JQmsXu85s1MA
+        7dQbDuGLXnx0OtBot6HeanGTxVxODdnyeC6YnZAdv/9MHo3gW5ZnIFqqPlnMZtVNN93uS2YnBPso4zF0
+        FGUOgpvok+/oVl267YbLFWB2QrDPgL6BRMk8iD45kU6DRLdddzqvmJ0Q7DOigD694EH0ybepFCh0dsVq
+        jTA7IdhnMp3CkNbgQfTJqzbb25LZHFu2WI6ZnRDsgwDcggcxTNaEffC7jCCGyZqQqn44FUI0ED4s/o5h
+        siakIn3R4SYTQn4BZKpM7GT7InoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>238, 17</value>
+  </metadata>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>407, 17</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
